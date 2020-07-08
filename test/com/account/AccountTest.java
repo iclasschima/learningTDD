@@ -51,8 +51,8 @@ class AccountTest {
     void accountWillWithdrawWithPinAndBalanceGreaterThan1000Test () {
         account.depositMoney(5000);
         account.setPin(1234);
-        account.withdrawMoney(1000, 1234);
-        assertEquals(4000, account.getAccountBalance());
+        account.withdrawMoney(4000, 1234);
+        assertEquals(1000, account.getAccountBalance());
     }
 
 }
