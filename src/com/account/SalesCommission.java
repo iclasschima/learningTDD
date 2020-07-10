@@ -18,8 +18,7 @@ public class SalesCommission {
             if (amount < 0) {
                 break;
             }
-
-            //amount = 50000
+            
             commission = 0.09 * amount;
             salary = 200 + (int) commission;
 
