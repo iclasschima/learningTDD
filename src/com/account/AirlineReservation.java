@@ -15,7 +15,10 @@ public class AirlineReservation {
             System.out.print("Please enter 1 for FIRST-CLASS or Enter 2 for ECONOMY or 0 to quit: ");
             response = input.nextInt();
 
-            if (response == 0) break;
+            if (response == 0) {
+                System.out.println("Next flight leaves in 3 hours.");
+                break;
+            }
 
             if (response == 1) {
                 for (int i = 0; i < 5; i++ ) {
@@ -47,7 +50,7 @@ public class AirlineReservation {
             }
 
             if (economySeatsCount > 5 && firstClassSeatsCount > 5) {
-                System.out.println("Both sections are full");
+                System.out.println("Both sections are full. Next flight leaves in 3 hours.");
                 break;
             }
         }
